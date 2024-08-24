@@ -1,20 +1,17 @@
-# You need the AZURE_WEB_APP_NAME and to download the deployment profile and
-# add it as a secret to this repo with the name AZURE_WEBAPP_PUBLISH_PROFILE
 name: Trigger auto deployment for demo-container
 
 env:
-  # # !!!! UPDATE THESE VARIABLE BELOW !!!!
+  # !!!! UPDATE THESE VARIABLE BELOW !!!!
   # AZURE_WEBAPP_NAME: changeme 
   # AZURE_GROUP_NAME: changeme
 
-# When this action will be executed
 on:
   # Automatically trigger it when detected changes in repo. Remove comments to enable
   #push:
   #  branches:
   #    [ main ]
 
-  # Allow mannually trigger
+  # Allow manually trigger
   workflow_dispatch:
 
 jobs:
